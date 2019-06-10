@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1>1.무슨 텍스트를 썻나요? </h1>
+<h2>답 : {{textname}} </h2><br>
+<h1>2.몇개의 단어로 되어 있나요?</h1>
+<h2>답 : {{textcount}} </h2><br>
+<h1>3.어떤 단어가 몇개씩 있나요?</h1>
+<h2> 답 : </h2>
+{% for text_key, text_value in text_dic %}
+<h2>{{text_key}} - {{text_value}}개 </h2><br>
+{% endfor %}
+
+{% endblock %}

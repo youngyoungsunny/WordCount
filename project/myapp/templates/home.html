@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+<form action="{% url 'result' %}">
+    <h1>텍스트를 입력하세요.</h1>
+    <textarea name="textname" rows="20" cols="100">
+    </textarea><br>
+    <input type="submit" class="btn btn-primary" value="제출버튼">
+</form>
+
+{% endblock %}
